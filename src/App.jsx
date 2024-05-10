@@ -1,24 +1,24 @@
+import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
+
 import SharedLayout from 'components/SharedLayout/SharedLayout';
-import FirstPage from 'pages/FirstPage/FirstPage';
-import SecondPage from 'pages/SecondPage/SecondPage';
-import HalfPage from 'pages/HalfPage/HalfPage';
 import ErrorPage from 'pages/ErrorPage/ErrorPage';
 import { AppWrapper } from './App.styled';
-import HomePage from './pages/HomePage/HomePage';
 
-const test = import.meta.env.VITE_API_TEST;
+const Home = lazy(() => import('pages/HomePage/HomePage.jsx'));
+const Nannies = lazy(() => import('pages/NanniesPage/NanniesPage.jsx'));
+const Favorites = lazy(() => import('pages/FavoritesPage/FavoritesPage.jsx'));
+
 
 function App() {
-  console.log(test);
+ 
   return (
     <AppWrapper>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/first" element={<FirstPage />} />
-          <Route path="/second" element={<SecondPage />}>
-            <Route path=":half" element={<HalfPage />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/nannies" element={<Nannies />} />
+          <Route path="/favorites" element={<Favorites />}>
           </Route>
           <Route path="*" element={<ErrorPage />} />
         </Route>
