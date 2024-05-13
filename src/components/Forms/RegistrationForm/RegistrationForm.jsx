@@ -1,5 +1,13 @@
-import { useForm } from 'react-hook-form';
-import { RegisterBtn, RegisterDescription, RegisterForm, RegisterInput, RegisterTitle } from './RegistrationForm.style';
+import { Form, useForm } from 'react-hook-form';
+import { IoMdClose } from 'react-icons/io';
+import {
+  CloseButton,
+  FormBtn,
+  FormDescription,
+  FormInput,
+  FormOverlay,
+  FormTitle,
+} from './RegistrationForm.style';
 
 const RegistrationForm = () => {
   const { register, handleSubmit } = useForm();
@@ -9,21 +17,30 @@ const RegistrationForm = () => {
   };
 
   return (
-    <RegisterForm onSubmit={handleSubmit(onSubmit)}>
+    <FormOverlay>
+      <Form onSubmit={handleSubmit(onSubmit)}>
+        <CloseButton>
+          <IoMdClose />
+        </CloseButton>
 
-      <RegisterTitle>Registration</RegisterTitle>
-      <RegisterDescription>
-        Thank you for your interest in our platform! In order to register, we
-        need some information. Please provide us with the following information.
-      </RegisterDescription>
+        <FormTitle>Registration</FormTitle>
+        <FormDescription>
+          Thank you for your interest in our platform! In order to register, we
+          need some information. Please provide us with the following
+          information.
+        </FormDescription>
 
-      <RegisterInput type="name" placeholder="Name" {...register('name')} />
-      <RegisterInput type="email" placeholder="Email" {...register('email')} />
-      <RegisterInput type="password" placeholder="Password" {...register('password')} />
+        <FormInput type="name" placeholder="Name" {...register('name')} />
+        <FormInput type="email" placeholder="Email" {...register('email')} />
+        <FormInput
+          type="password"
+          placeholder="Password"
+          {...register('password')}
+        />
 
-      <RegisterBtn type="submit">Sign Up</RegisterBtn>
-
-    </RegisterForm>
+        <FormBtn type="submit">Sign Up</FormBtn>
+      </Form>
+    </FormOverlay>
   );
 };
 

@@ -1,11 +1,7 @@
-import RegistrationForm from "../../components/Forms/RegistrationForm/RegistrationForm";
+import Hero from '../../components/Hero/Hero';
 
-const  HomePage = () => {
-    return (
-      <div>
-    <RegistrationForm/>
-      </div>
-    );
-  };
-  
-  export default HomePage;
+const HomePage = () => {
+  return <Hero />;
+};
+
+export default HomePage;

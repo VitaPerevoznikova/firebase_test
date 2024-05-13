@@ -1,5 +1,6 @@
-import { HeaderBox, HeaderContainer,LogoLink, NavLink, Navigation } from "./Header.styled";
+import { HeaderBox, HeaderContainer,LogoLink, NavBox, Navigation, StyledLink } from "./Header.styled";
 import {Container} from "../../styles/Container.styled";
+import AuthNav from "../AuthNav/AuthNav";
 
 export const Header = () => {
 
@@ -7,18 +8,29 @@ export const Header = () => {
     <HeaderContainer>
       <Container>
         <HeaderBox>
-     <LogoLink to="/">Nanny.Services</LogoLink>
+     <LogoLink to="/" >
+      Nanny.Services
+      </LogoLink>
+
+     <NavBox>
       <Navigation>
-      <NavLink to="/home">
+
+      <StyledLink to="/home">
           Home
-        </NavLink>
-        <NavLink to="/nannies">
+        </StyledLink>
+
+        <StyledLink to="/nannies">
           Nannies
-        </NavLink>
-        <NavLink to="/favorites">
+        </StyledLink>
+
+        {/* <StyledLink to="/favorites">
           Favorites
-        </NavLink>
+        </StyledLink> */}
       </Navigation>
+
+      <AuthNav/>
+      
+      </NavBox>
       </HeaderBox>
       </Container>
     </HeaderContainer>

@@ -5,7 +5,7 @@ export const Container = styled.div`
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
- 
+
   @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 32px;
@@ -14,7 +14,7 @@ export const Container = styled.div`
   @media screen and (min-width: 1440px) {
     width: 1440px;
     margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
