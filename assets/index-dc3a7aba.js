@@ -92,7 +92,6 @@ align-items: center
   line-height: 1.25;
   letter-spacing: -0.01em;
   color: var(--white);
-  }
 `,yv=vn.div`
   width: 320px;
   margin: 0 auto;
@@ -126,4 +125,4 @@ align-items: center
 `,vg=()=>D.jsx(hg,{children:D.jsx(mg,{children:"404"})});const gg=qr.div`
   width: 100%;
   height: 100vh;
-`,yg=_.lazy(()=>As(()=>import("./HomePage-a62b5366.js"),[])),wg=_.lazy(()=>As(()=>import("./NanniesPage-cd712d39.js"),[])),Sg=_.lazy(()=>As(()=>import("./FavoritesPage-b79f4b5e.js"),[]));function kg(){return D.jsx(gg,{children:D.jsx(Gh,{children:D.jsxs(wn,{path:"/",element:D.jsx(Sv,{}),children:[D.jsx(wn,{path:"/home",element:D.jsx(yg,{})}),D.jsx(wn,{path:"/nannies",element:D.jsx(wg,{})}),D.jsx(wn,{path:"/favorites",element:D.jsx(Sg,{})}),D.jsx(wn,{path:"*",element:D.jsx(vg,{})})]})})})}Al.createRoot(document.getElementById("root")).render(D.jsx(sn.StrictMode,{children:D.jsx(em,{basename:"/firebase_test",children:D.jsx(kg,{})})}));export{D as j};
+`,yg=_.lazy(()=>As(()=>import("./HomePage-9aaf0017.js"),[])),wg=_.lazy(()=>As(()=>import("./NanniesPage-51afb494.js"),[])),Sg=_.lazy(()=>As(()=>import("./FavoritesPage-db653a7f.js"),[]));function kg(){return D.jsx(gg,{children:D.jsx(Gh,{children:D.jsxs(wn,{path:"/",element:D.jsx(Sv,{}),children:[D.jsx(wn,{path:"/home",element:D.jsx(yg,{})}),D.jsx(wn,{path:"/nannies",element:D.jsx(wg,{})}),D.jsx(wn,{path:"/favorites",element:D.jsx(Sg,{})}),D.jsx(wn,{path:"*",element:D.jsx(vg,{})})]})})})}Al.createRoot(document.getElementById("root")).render(D.jsx(sn.StrictMode,{children:D.jsx(em,{basename:"/firebase_test",children:D.jsx(kg,{})})}));export{sn as R,D as j,vn as s};
