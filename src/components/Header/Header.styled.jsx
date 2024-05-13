@@ -34,5 +34,4 @@ export const NavLink = styled(Link)`
   line-height: 1.25;
   letter-spacing: -0.01em;
   color: var(--white);
-  }
 `;

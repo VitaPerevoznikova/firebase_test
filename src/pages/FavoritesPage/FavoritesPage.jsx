@@ -1,7 +1,7 @@
 const FavoritesPage = () => {
   return (
     <div>
-     
+    
     </div>
   );
 };
